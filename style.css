@@ -15,7 +15,15 @@ p{
 	font-size: 18px;
 }
 
+.big-text{
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+	line-height: 1.3;
+}
+
 h1, a{
+	padding: 5px;
 	color: lightgreen;
 }
 
@@ -24,6 +32,9 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	color: white;
+}
 
 .link{ 
 	font-weight: bold;
@@ -37,4 +48,39 @@ a{
 img{
 	max-width: 125px;
 	max-height: 125px;
+}
+
+.logo{
+	float: left;
+	max-width: 25px;
+	max-height: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+
+.logo-titulo{
+	margin-top: 0px;
+	color: lightgreen;
+	animation: type 3.5s steps(20);
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 4px solid lightgreen;
+	width: 20ch;
+	font-weight: bold;
+}
+
+@keyframes type{
+	0% {
+		width:0ch;
+	}
+}
+
+.nav{
+	margin-top: 0px;
+	float:right;
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 18px;
 }
