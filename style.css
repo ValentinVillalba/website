@@ -1,42 +1,48 @@
+/*NEGRO= #191919 */
+/*BLANCO= #FFFFF2 */
+/*AMARILLO= #E6DA50 */
+/*ROJO= #E66659 */
+/*VERDE= #26D926 */
+/*AZUL= #268FFF  */
+/*CELESTE= #4FC9FF  */
+/*ROSA= #FF85A8  */
+
 body{
-	overflow-x: hidden;
-	font-family: "Lucida Console", monospace;
+	font-family: monospace;
 	color: #FFFFF2;
 	background: #191919;
 	text-align: center;
 }
 
-.footer-p{
-	padding: 10px;
-	font-size: 8px;
-}
-
 p{
-	font-size: 16px;
+	font-size: 18px;
 }
 
-.big-text, .p-titulo{
-	text-align: justify;
-	margin-left: 80px;
-	margin-right: 80px;
-	line-height: 1.3;
+.mucho-texto, .p-titulo{
+	text-align: left;
+	margin-left: 100px;
+	margin-right: 100px;
+	line-height: 1.2;
 }
 
-.p-titulo{
+.p-titulo, .p-homepage-titulo{
 	color: #E6DA50;
 	font-weight: bold;
 }
 
-h1{
-	font-size: 28px;
+.p-homepage-titulo{
+	margin: 0px;
+	font-size: 36px;	
 }
 
-h1, a{
-	color: #E66659;
+h1{
+	font-size: 36px;
+	color: #E6DA50;
 }
 
 a{
 	font-weight: bold;
+	color: #4FC9FF;
 	text-decoration: none;
 }
 
@@ -44,13 +50,15 @@ a:hover{
 	color: #FFFFF2;
 }
 
-.link{ 
-	font-weight: bold;
+.homepage-link{
+	color: #E6D77D;
+	font-weight: normal;
 	font-size: 16px;
 }
 
-.my-header1{
-	margin: 25px;
+.footer-link{
+	font-weight: normal;
+	color: #FF85A8;
 }
 
 img{
@@ -58,37 +66,28 @@ img{
 	max-height: 125px;
 }
 
-.logo{
+.homepage-img{
+	max-width: 250px;
+	max-height: 450px;
+	border: solid 4px #E6DA50;
+}
+
+.div-homepage-maestro{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.div-homepage-texto{
 	float: left;
-	max-width: 25px;
-	max-height: 20px;
-	margin-right: 5px;
-	margin-left: 5px;
-	margin-top: 0px;
+	padding-right: 80px;
+	padding-top: 150px;
+	text-align: left;
 }
 
-.logo-titulo{
-	margin-top: 0px;
-	color: #E66659;
-	animation: type 3.5s steps(20);
-	overflow: hidden;
-	white-space: nowrap;
-	border-right: 4px solid #E66659;
-	width: 20ch;
-	font-weight: bold;
-}
-
-@keyframes type{
-	0% {
-		width:0ch;
-	}
-}
-
-.nav{
-	margin-top: 0px;
-	float:right;
-	display: inline;
-	margin-left: 5px;
-	margin-right: 5px;
-	font-size: 18px;
+.div-homepage-imagen{
+	float: right;
+	padding-left: 80px;
 }
