@@ -1,30 +1,38 @@
 body{
 	overflow-x: hidden;
 	font-family: "Lucida Console", monospace;
-	color: white;
-	background: black;
+	color: #FFFFF2;
+	background: #191919;
 	text-align: center;
 }
 
 .footer-p{
 	padding: 10px;
-	font-size: 8px;
+	font-size: 10px;
 }
 
 p{
-	font-size: 18px;
+	font-size: 16px;
 }
 
-.big-text{
+.big-text, .p-titulo{
 	text-align: justify;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 80px;
+	margin-right: 80px;
 	line-height: 1.3;
 }
 
+.p-titulo{
+	color: #E6DA50;
+	font-weight: bold;
+}
+
+h1{
+	font-size: 28px;
+}
+
 h1, a{
-	padding: 5px;
-	color: lightgreen;
+	color: #E66659;
 }
 
 a{
@@ -33,12 +41,12 @@ a{
 }
 
 a:hover{
-	color: white;
+	color: #FFFFF2;
 }
 
 .link{ 
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .my-header1{
@@ -61,11 +69,11 @@ img{
 
 .logo-titulo{
 	margin-top: 0px;
-	color: lightgreen;
+	color: #E66659;
 	animation: type 3.5s steps(20);
 	overflow: hidden;
 	white-space: nowrap;
-	border-right: 4px solid lightgreen;
+	border-right: 4px solid #E66659;
 	width: 20ch;
 	font-weight: bold;
 }
