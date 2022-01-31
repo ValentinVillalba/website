@@ -94,6 +94,10 @@ a:hover{
 	color: #FF85A8;
 }
 
+ul{
+	margin-left: 26px;
+}
+
 .li-tutorial{
 	font-size: 20px;
 	text-align: left;
