@@ -17,6 +17,6 @@ function cambiarImagen(){
         img.src = "images/you-will-own-nothing.jpg"
         document.getElementById("titulo-epico").innerHTML = "you will own nothing."
         img.classList.remove("puntero");
-        document.getElementById("enlace-epico").style.display = "block";
+        document.getElementById("enlace-epico").style.display = "initial";
     }
 }
