@@ -10,6 +10,8 @@
 
 :root {
 	--blanco: #ffffff;
+	--rosa: #FF85A8;
+	--rojo: #E66659;
 }
 
 body{
@@ -17,6 +19,11 @@ body{
 	color: #ffffff;
 	background: #121212;
 	text-align: center;
+}
+
+.centrado{
+	width: fit-content;
+	margin: auto;
 }
 
 .index-1{
@@ -27,6 +34,32 @@ body{
 	padding: 5px;
 	background: #332424;
 	box-shadow: 10px 10px 5px #0D0D0D;
+}
+
+.flex-only{
+	display: flex;
+}
+
+.fondo-mensaje{
+	background: #332424;
+	width: fit-content;
+	margin: auto;
+}
+
+.margin-mensaje{
+	margin: 30px;
+}
+
+.boton-send{
+	background: #121212;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.padding-10{
+	padding: 10px;
 }
 
 .index-pic{
@@ -51,6 +84,10 @@ body{
 
 .position-titulo-epico{
 	float: left;
+}
+
+.color-formulario{
+	color: var(--rojo);
 }
 
 .mucho-texto{
