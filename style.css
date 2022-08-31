@@ -52,6 +52,10 @@ body{
 	margin: 30px;
 }
 
+.imagen-redonda{
+	border-radius: 50%;
+}
+
 .boton-send{
 	background: #121212;
 	color: #ffffff;

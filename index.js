@@ -1,4 +1,7 @@
+let days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
 let klaus = false;
+
+window.addEventListener('load', mostrarDia());
 
 function cambiarImagen(){
     let img = document.getElementById("imagen-epica");
@@ -25,4 +28,10 @@ function enviarMensaje(){
     document.getElementById("caja-mensaje").style.display = "none";
     document.getElementById("cosas-de-arriba").style.display = "none";
     document.getElementById("enviando-mensaje").style.display = "block";
+}
+
+function mostrarDia(){
+    const d = new Date();
+    let day = d.getDay()
+    document.getElementById("dia-js").innerHTML = "the day of our lord is " + days[day-1];
 }
