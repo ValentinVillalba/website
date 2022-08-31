@@ -10,17 +10,19 @@
 	</head>
 
 	<body>
-		<div>
-			<h1 id="titulo-epico">boowomp's page</h1>
+		<div id="cosas-de-arriba">
+			<div>
+				<h1 id="titulo-epico">boowomp's page</h1>
+			</div>
+			<div>
+				<img id="imagen-epica" onclick="cambiarImagen()" class="puntero imagen-epica-size" src="images/happy.gif" alt="happy">
+			</div>
+			
+			<a id="enlace-epico" style="display: none;" href="documents/unabomber.pdf">click here to be free</a>
 		</div>
-		<div>
-			<img id="imagen-epica" onclick="cambiarImagen()" class="puntero imagen-epica-size" src="images/happy.gif" alt="happy">
-		</div>
-		
-		<a id="enlace-epico" style="display: none;" href="documents/unabomber.pdf">click here to be free</a>
 
 
-		<div class="margin-mensaje">
+		<div id="caja-mensaje" class="margin-mensaje">
 			<div class="fondo-mensaje">
 				<form action="https://formsubmit.co/432897d02cf3138f6b97c2d9d14a2bbb" method="POST">
 					<div>
@@ -45,12 +47,17 @@
 						</div>
 					</div>
 					<div class="padding-10">
-						<button type="submit" class="boton-send">send</button>
+						<button onclick="enviarMensaje()" type="submit" class="boton-send">send</button>
 					</div>
 					<input type="hidden" name="_next" value="https://valentinvillalba.xyz/thanks">
 					<input type="hidden" name="_captcha" value="false">
 				</form>
 			</div>
+		</div>
+
+		<div id="enviando-mensaje" style="display: none;">
+			<h1>sending message...</h1>
+			<img class="gif-saul" src="images/saul.gif" alt="sending">
 		</div>
 
 		<script src="index.js"></script>

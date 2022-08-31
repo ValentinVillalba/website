@@ -20,3 +20,9 @@ function cambiarImagen(){
         document.getElementById("enlace-epico").style.display = "initial";
     }
 }
+
+function enviarMensaje(){
+    document.getElementById("caja-mensaje").style.display = "none";
+    document.getElementById("cosas-de-arriba").style.display = "none";
+    document.getElementById("enviando-mensaje").style.display = "block";
+}

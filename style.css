@@ -58,6 +58,17 @@ body{
 	padding: 5px;
 }
 
+.boton-send:hover{
+	background-color: #ffffff;
+	color: #121212;
+}
+
+.gif-saul{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
 .padding-10{
 	padding: 10px;
 }
