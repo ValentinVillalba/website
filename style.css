@@ -19,8 +19,18 @@
 body{
 	font-family: monospace;
 	color: #ffffff;
-	background: #121212;
+	background-color: #121212;
 	text-align: center;
+	background-image: url("images/background.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.fondo-dia{
+	background: #00000098;
+	width: fit-content;
+	margin: auto;
 }
 
 .centrado{
