@@ -1,4 +1,4 @@
-let days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+let days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 let klaus = false;
 
 window.addEventListener('load', mostrarDia());
@@ -33,5 +33,5 @@ function enviarMensaje(){
 function mostrarDia(){
     const d = new Date();
     let day = d.getDay()
-    document.getElementById("dia-js").innerHTML = "the day of our lord is " + days[day-1];
+    document.getElementById("dia-js").innerHTML = "the day of our lord is " + days[day];
 }
