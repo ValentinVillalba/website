@@ -33,6 +33,19 @@ body{
 	margin: auto;
 }
 
+.imagen-tcg{
+	width: 400px;
+	height: 400px;
+}
+
+.caja-del-medio{
+	align-items: center;
+}
+
+.borde-verde{
+	border: 1px solid #53a498;
+}
+
 .centrado{
 	width: fit-content;
 	margin: auto;
@@ -172,6 +185,10 @@ ul{
 	font-size: 22px;
 }
 
+.flex-only{
+	display: flex !important;
+}
+
 .homepage-img{
 	max-width: 250px;
 	max-height: 450px;
@@ -197,4 +214,16 @@ ul{
 .div-homepage-imagen{
 	float: right;
 	padding-left: 18px;
+}
+
+
+@media (max-width: 1023px) {
+	.caja-del-medio-mobile{
+		display: block !important;
+	}
+
+	.imagen-tcg{
+		width: 200px;
+		height: 200px;
+	}
 }

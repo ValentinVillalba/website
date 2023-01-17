@@ -25,44 +25,67 @@
 			<p id="dia-js"></p>
 		</div>
 
-		<div id="caja-mensaje" class="margin-mensaje">
-			<div class="fondo-mensaje">
-				<form action="https://formsubmit.co/432897d02cf3138f6b97c2d9d14a2bbb" method="POST">
-					<div>
+		<div class="flex-only centrado caja-del-medio caja-del-medio-mobile">
+			<div id="caja-mensaje" class="margin-mensaje borde-verde centrado">
+				<div class="fondo-mensaje">
+					<form action="https://formsubmit.co/432897d02cf3138f6b97c2d9d14a2bbb" method="POST">
+						<div>
+							<div class="padding-10">
+								<span class="color-formulario">send me a message</span>
+							</div>
+							<div>
+								<div class="padding-10">
+									<span>are you my friend?</span>
+								</div>
+								<div>
+									<input required name="friend" type="radio" value="yes">yes
+									<input required name="friend" type="radio" value="no">no
+								</div>
+							</div>
+							<div>
+								<div class="padding-10">
+									<span>your name:</span>
+								</div>
+								<div>
+									<input required name="nombre" type="text">
+								</div>
+							</div>
+							<div>
+								<div class="padding-10">
+									<span>your email address:</span>
+								</div>
+								<div>
+									<input id="campo-email" required name="email" type="email">
+								</div>
+							</div>
+							<div>
+								<div class="padding-10">
+									<span>message:</span>
+								</div>
+								<div>
+									<textarea required name="mensaje" cols="30" rows="10"></textarea>
+								</div>
+							</div>
+						</div>
+						<div id="advertencia-form" style="color: #fedb9d; padding: 10px; padding-bottom: 0px; display: none;">
+							please complete the form!
+						</div>
 						<div class="padding-10">
-							<span class="color-formulario">send me a message</span>
+							<button onclick="checkform(form)" type="submit" class="boton-send">send</button>
 						</div>
-						<div>
-							<div class="padding-10">
-								<span>your name:</span>
-							</div>
-							<div>
-								<input required name="nombre" type="text">
-							</div>
-						</div>
-						<div>
-							<div class="padding-10">
-								<span>your email (optional):</span>
-							</div>
-							<div>
-								<input name="email" type="email">
-							</div>
-						</div>
-						<div>
-							<div class="padding-10">
-								<span>message:</span>
-							</div>
-							<div>
-								<textarea required name="mensaje" cols="30" rows="10"></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="padding-10">
-						<button onclick="enviarMensaje()" type="submit" class="boton-send">send</button>
-					</div>
-					<input type="hidden" name="_next" value="https://valentinvillalba.xyz/thanks">
-					<input type="hidden" name="_captcha" value="false">
-				</form>
+						<input type="hidden" name="_next" value="https://valentinvillalba.xyz/thanks">
+						<input type="hidden" name="_captcha" value="false">
+					</form>
+				</div>
+			</div>
+
+			<div id="caja-tcg">
+				<div class="borde-verde fondo-mensaje">
+					<img src="images/tcg.png" alt="tcg" class="imagen-tcg">
+				</div>
+				<div>
+					<a href="https://discord.gg/MeAnTaKeQU">or click here to join</a>
+				</div>
 			</div>
 		</div>
 
