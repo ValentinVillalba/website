@@ -216,6 +216,17 @@ ul{
 	padding-left: 18px;
 }
 
+.imagen-qr{
+	position: absolute;
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+}
+
+.imagen-qr:hover{
+	opacity: 1;
+	transition: opacity .2s ease-in-out;
+}
+
 
 @media (max-width: 1023px) {
 	.caja-del-medio-mobile{
