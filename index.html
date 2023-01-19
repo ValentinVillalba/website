@@ -5,6 +5,7 @@
 		<meta charset="utf-8"/>
 		<link rel='stylesheet' type='text/css' href="style.css">
 		<link rel="icon" href="images/cat.jpg" type="image/icon type">
+		<script src="https://kit.fontawesome.com/3718a4acef.js" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -12,17 +13,41 @@
 	<body>
 		<div id="cosas-de-arriba">
 			<div class="fondo-dia">
-				<h1 id="titulo-epico">boowomp's page</h1>
+				<h1 style="font-size: 38px;" id="titulo-epico">boowomp's page</h1>
 			</div>
 			<div>
-				<img id="imagen-epica" onclick="cambiarImagen()" class="puntero imagen-epica-size imagen-redonda" src="images/happy.gif" alt="happy">
+				<img id="imagen-epica" onclick="cambiarImagen()" class="borde-verde puntero imagen-epica-size imagen-redonda" src="images/happy.gif" alt="happy">
 			</div>
 			
 			<a id="enlace-epico" style="display: none;" href="documents/unabomber.pdf">click here to be free</a>
 		</div>
 
-		<div class="fondo-dia">
+		<div class="fondo-dia" style="font-size: 16px;">
 			<p id="dia-js"></p>
+		</div>
+
+		<div class="fondo-dia" style="font-size: 24px;">
+			<p style="color: rgb(254, 219, 157);" id="time"></p>
+		</div>
+
+		<div>
+			<audio id="cancion-audio" loop src="audio/fotn.mp3"></audio>
+			<p class="fondo-dia"><i class="fa-sharp fa-solid fa-music"></i> epic song: mac demarco - freaking out the neighborhood (sped up instrumental) <i class="fa-sharp fa-solid fa-music"></i></p>
+			<div class="flex-only centrado">
+				<div id="boton-play" style="margin: 12px;">
+					<button onclick="picarlePlay()" class="boton-musica puntero"><i class="fa-solid fa-play"></i></button>
+				</div>
+				<div id="boton-pausa" style="margin: 12px; display: none;">
+					<button onclick="picarlePause()" class="boton-musica puntero"><i class="fa-solid fa-pause"></i></button>
+				</div>
+
+				<div style="margin: 12px;">
+					<button onclick="bajarVolumen()" class="boton-musica puntero"> VOL <i class="fa-solid fa-minus"></i></button>
+				</div>
+				<div style="margin: 12px;">
+					<button onclick="subirVolumen()" class="boton-musica puntero"> VOL <i class="fa-solid fa-plus"></i></button>
+				</div>
+			</div>
 		</div>
 
 		<div class="flex-only centrado caja-del-medio caja-del-medio-mobile">
@@ -62,13 +87,13 @@
 								<div class="padding-10">
 									<span>message:</span>
 								</div>
-								<div>
-									<textarea required name="mensaje" cols="30" rows="10"></textarea>
+								<div style="margin: 0px 10px;">
+									<textarea class="textarea-tuneado" required name="mensaje" cols="30" rows="10"></textarea>
 								</div>
 							</div>
 						</div>
 						<div id="advertencia-form" style="color: #fedb9d; padding: 10px; padding-bottom: 0px; display: none;">
-							please complete the form!
+							please complete the form correctly!
 						</div>
 						<div class="padding-10">
 							<button onclick="checkform(form)" type="submit" class="boton-send">send</button>
@@ -84,7 +109,7 @@
 					<img src="images/qr.png" alt="qr" class="imagen-tcg imagen-qr">
 					<img src="images/tcg.png" alt="tcg" class="imagen-tcg">
 				</div>
-				<div>
+				<div style="margin: 10px;">
 					<a href="https://discord.gg/MeAnTaKeQU">or click here to join</a>
 				</div>
 			</div>

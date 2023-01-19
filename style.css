@@ -227,6 +227,24 @@ ul{
 	transition: opacity .2s ease-in-out;
 }
 
+.boton-musica{
+	background: #db6255;
+	padding: 5px 10px;
+	border: none;
+	font-size: 20px;
+}
+
+.boton-musica:hover{
+	color: #db6255;
+	background: #000000;
+}
+
+.textarea-tuneado{
+	background-image: url("images/estatica.gif");
+	color: #ffffff;
+	border: none;
+	padding: 5px;
+}
 
 @media (max-width: 1023px) {
 	.caja-del-medio-mobile{
